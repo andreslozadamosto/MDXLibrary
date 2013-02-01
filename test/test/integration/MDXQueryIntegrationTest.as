@@ -34,10 +34,10 @@ package test.integration
 			axis.type = MDXAxis.ROW_AXIS;
 			axis.add(new AxisNonEmpty());
 			item = new AxisCrossJoin();
-			item.add("[OCAL_MONTH].Members");
+			item.add("[MONTH].Members");
 			axis.add(item);
 			item = new AxisDataItem();
-			item.add("[OSHIPTO].Members");
+			item.add("[Selers].Members");
 			axis.add(item);
 			this._mdxQuery.addAxis(axis);
 			
@@ -46,7 +46,7 @@ package test.integration
 			axis.type = MDXAxis.COLUMN_AXIS;
 			item = new AxisDataItem();
 			var axisItem:IMDXAxisItem = new MDXAxisItem();
-			axisItem.addMember("[OCountry]");
+			axisItem.addMember("[Country]");
 			axisItem = new SubsetAxisItemDecorator(axisItem);
 			(axisItem as SubsetAxisItemDecorator).maxValue = 10;
 			item.addAxisItem(axisItem);
@@ -55,8 +55,8 @@ package test.integration
 			
 			var s:String = this._mdxQuery.generate();
 			var compare:String = "SELECT\n\t"+
-								"NON EMPTY { CrossJoin( [OCAL_MONTH].Members, [OSHIPTO].Members ) } ON ROWS,\n\t"+
-								"SUBSET ( [OCountry].Members, 0, 10 ) ON COLUMNS,\n"+
+								"NON EMPTY { CrossJoin( [MONTH].Members, [Selers].Members ) } ON ROWS,\n\t"+
+								"SUBSET ( [Country].Members, 0, 10 ) ON COLUMNS,\n"+
 								"FROM VENTAS";
 			assertEquals(compare, s);
 		}

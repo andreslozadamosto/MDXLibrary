@@ -23,15 +23,15 @@ package test.integration
 			
 			axis.add(new AxisNonEmpty());
 			item = new AxisCrossJoin();
-			item.add("[OCAL_MONTH].Members");
+			item.add("[MONTH].Members");
 			axis.add(item);
 			item = new AxisDataItem();
-			item.add("[OSHIPTO].Members");
+			item.add("[Selers].Members");
 			axis.add(item);
 			
 			var s:String = axis.generate();
 			
-			assertEquals("NON EMPTY { CrossJoin( [OCAL_MONTH].Members, [OSHIPTO].Members ) } ON ROWS", s);
+			assertEquals("NON EMPTY { CrossJoin( [MONTH].Members, [Selers].Members ) } ON ROWS", s);
 		}
 	}
 }
