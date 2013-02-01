@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.mdxlibrary.MDXAxis"/>
+    <classEntry path="com.mdxlibrary.MDXAxisItem"/>
+    <classEntry path="com.mdxlibrary.MDXQuery"/>
+    <classEntry path="com.mdxlibrary.axisdata.AxisCrossJoin"/>
+    <classEntry path="com.mdxlibrary.axisdata.AxisDataItem"/>
+    <classEntry path="com.mdxlibrary.axisdata.AxisNonEmpty"/>
+    <classEntry path="com.mdxlibrary.axisdata.AxisUnionJoin"/>
+    <classEntry path="com.mdxlibrary.axisitemdecorators.FilterAxisItemDecorator"/>
+    <classEntry path="com.mdxlibrary.axisitemdecorators.HeadAxisItemDecorator"/>
+    <classEntry path="com.mdxlibrary.axisitemdecorators.SubsetAxisItemDecorator"/>
+    <classEntry path="com.mdxlibrary.axisitemdecorators.TailAxisItemDecorator"/>
+    <classEntry path="com.mdxlibrary.interfaces.IAxisDataItem"/>
+    <classEntry path="com.mdxlibrary.interfaces.IMDXAxis"/>
+    <classEntry path="com.mdxlibrary.interfaces.IMDXAxisItem"/>
+    <classEntry path="com.mdxlibrary.interfaces.IMDXQuery"/>
+    <classEntry path="test.regresion.Issue1"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

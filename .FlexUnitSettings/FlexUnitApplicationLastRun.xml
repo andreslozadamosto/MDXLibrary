@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="" >
+<testsuite  name="Default Test Suite" project="MDXLibrary">
+<testsuite name="test.integration:MDXAxisIntegrationTest" type="testcaseclass"/>
+<testsuite name="test.integration:MDXQueryIntegrationTest" type="testcaseclass"/>
+<testsuite name="test.mdxlibrary.mdx:MDXAxisItemTest" type="testcaseclass"/>
+<testsuite name="test.mdxlibrary.mdx:MDXAxisTest" type="testcaseclass"/>
+</testsuite>
+<portNumber value="8765" />
+</testrun>
